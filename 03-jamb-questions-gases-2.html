@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMB Questions on Gases 2 — Hints on Chemistry Practicals</title>
+    <style>
+        :root {
+            --dark-blue: #0f172a;
+            --teal-brand: #0d9488;
+            --slate-text: #334155;
+            --bg-canvas: #f8fafc;
+            --border-clean: #e2e8f0;
+        }
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            color: var(--slate-text);
+            background-color: var(--bg-canvas);
+            line-height: 1.7;
+        }
+        .nav-header {
+            background: var(--dark-blue);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--teal-brand);
+        }
+        .nav-header a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .workspace-container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .content-card {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 12px;
+            border: 1px solid var(--border-clean);
+        }
+        h1 { color: var(--dark-blue); font-size: 2rem; margin-top: 0; }
+        .quiz-card {
+            background: var(--bg-canvas);
+            border: 1px solid var(--border-clean);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        .option-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 15px 0;
+        }
+        .option-btn {
+            background: #ffffff;
+            border: 1px solid var(--border-clean);
+            padding: 12px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+        .option-btn:hover {
+            border-color: var(--teal-brand);
+            background: #f0fdfa;
+        }
+        .show-ans-btn {
+            background: var(--dark-blue);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .answer-reveal {
+            display: none;
+            margin-top: 15px;
+            padding: 12px;
+            background: #ecfdf5;
+            border-left: 4px solid #10b981;
+            color: #065f46;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            .option-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="nav-header">
+        <span>Hints on Chemistry Practicals</span>
+        <nav><a href="../index.html">&larr; Back to Home Cover</a></nav>
+    </header>
+
+    <div class="workspace-container">
+        <div class="content-card">
+            <span style="color: var(--teal-brand); font-weight: bold; text-transform: uppercase; font-size: 0.85rem;">Book Page 29</span>
+            <h1>JAMB Questions on Gases 2</h1>
+            <p style="color: #64748b; font-style: italic; margin-bottom: 30px;">(Select an option or click the validation button below each card to reveal keys instantly.)</p>
+
+            <!-- Q12 -->
+            <div class="quiz-card">
+                <p><strong>12.</strong> Sulphur (IV) oxide gas can act as:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. an oxidizing agent</button>
+                    <button class="option-btn" onclick="reveal(this)">B. a dehydrating agent</button>
+                    <button class="option-btn" onclick="reveal(this)">C. a bleaching agent</button>
+                    <button class="option-btn" onclick="reveal(this)">D. a precipitating agent</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: C — Sulphur (IV) oxide is widely used as a bleaching agent in the presence of moisture.</div>
+            </div>
+
+            <!-- Q13 -->
+            <div class="quiz-card">
+                <p><strong>13.</strong> Which of the following is used as a rocket fuel?</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. HNO₃</button>
+                    <button class="option-btn" onclick="reveal(this)">B. CH₃COOH</button>
+                    <button class="option-btn" onclick="reveal(this)">C. H₂SO₄</button>
+                    <button class="option-btn" onclick="reveal(this)">D. HCl</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: A — Concentrated \(HNO_3\) serves as a potent oxidizer in rocket fuel systems.</div>
+            </div>
+
+            <!-- Q14 -->
+            <div class="quiz-card">
+                <p><strong>14.</strong> The bleaching action of chlorine is effective due to the presence of:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. Hydrogen chloride</button>
+                    <button class="option-btn" onclick="reveal(this)">B. Water</button>
+                    <button class="option-btn" onclick="reveal(this)">C. Air</button>
+                    <button class="option-btn" onclick="reveal(this)">D. Oxygen</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: B — Moisture/Water is essential for chlorine to generate its active oxochlorate(I) acid bleaching agent.</div>
+            </div>
+
+            <!-- Q15 -->
+            <div class="quiz-card">
+                <p><strong>15.</strong> Sulphur (IV) oxide is a strong reducing agent in the presence of water due to the formation of:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. hydroxide ion</button>
+                    <button class="option-btn" onclick="reveal(this)">B. sulphur (VI) oxide</button>
+                    <button class="option-btn" onclick="reveal(this)">C. hydrogen sulphide</button>
+                    <button class="option-btn" onclick="reveal(this)">D. trioxosulphate (IV) salt</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: D — \(SO_2\) dissolves in water to release active reducing ions from trioxosulphate(IV) acid fractions.</div>
+            </div>
+
+            <!-- Q16 -->
+            <div class="quiz-card">
+                <p><strong>16.</strong> The gas that gives brown colouration in the brown ring test is:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. CO</button>
+                    <button class="option-btn" onclick="reveal(this)">B. NO</button>
+                    <button class="option-btn" onclick="reveal(this)">C. CO₂</button>
+                    <button class="option-btn" onclick="reveal(this)">D. NO₂</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: B — Nitrogen (II) oxide (\(NO\)) reacts with iron(II) sulfate complex frames to form the diagnostic brown ring tracking nitrate verification layers.</div>
+            </div>
+
+            <!-- Q17 -->
+            <div class="quiz-card">
+                <p><strong>17.</strong> Sulphur (IV) oxide bleaches by:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. hydration</button>
+                    <button class="option-btn" onclick="reveal(this)">B. reduction</button>
+                    <button class="option-btn" onclick="reveal(this)">C. absorption</button>
+                    <button class="option-btn" onclick="reveal(this)">D. oxidation</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: B — Unlike chlorine, \(SO_2\) bleaches organic dye frameworks strictly via reduction.</div>
+            </div>
+
+            <!-- Q18 -->
+            <div class="quiz-card">
+                <p><strong>18.</strong> Chlorine gas turns a damp starch-iodine paper:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. Pink</button>
+                    <button class="option-btn" onclick="reveal(this)">B. colourless</button>
+                    <button class="option-btn" onclick="reveal(this)">C. red</button>
+                    <button class="option-btn" onclick="reveal(this)">D. dark blue</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: D — Chlorine displaces underlying iodine particles from the test paper substrate matrix, triggering the classic dark blue starch complex.</div>
+            </div>
+
+            <!-- Q19 -->
+            <div class="quiz-card">
+                <p><strong>19.</strong> When H₂S is passed into a solution of iron (III) chloride, the solution turns:</p>
+                <div class="option-grid">
