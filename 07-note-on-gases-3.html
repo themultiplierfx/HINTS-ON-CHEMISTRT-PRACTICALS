@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note on Gases 3 — Hints on Chemistry Practicals</title>
+    <style>
+        :root {
+            --dark-blue: #0f172a;
+            --teal-brand: #0d9488;
+            --slate-text: #334155;
+            --bg-canvas: #f8fafc;
+            --border-clean: #e2e8f0;
+            --orange-alert: #ea580c;
+        }
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            color: var(--slate-text);
+            background-color: var(--bg-canvas);
+            line-height: 1.7;
+        }
+        .nav-header {
+            background: var(--dark-blue);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--teal-brand);
+        }
+        .nav-header a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .workspace-container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .content-card {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 12px;
+            border: 1px solid var(--border-clean);
+        }
+        h1 { color: var(--dark-blue); font-size: 2rem; margin-top: 0; }
+        h2 { color: var(--dark-blue); font-size: 1.4rem; margin-top: 35px; border-bottom: 2px solid var(--bg-canvas); padding-bottom: 8px; }
+        h3 { color: var(--dark-blue); font-size: 1.1rem; margin-top: 25px; margin-bottom: 10px; }
+        
+        .equation-box {
+            background-color: var(--bg-canvas);
+            border-left: 4px solid var(--teal-brand);
+            padding: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 1.05rem;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        
+        .teacher-box {
+            background-color: #f0fdfa;
+            border-left: 4px solid var(--teal-brand);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 25px 0;
+        }
+        .teacher-box strong { color: var(--teal-brand); }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            border-top: 1px solid var(--border-clean);
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="nav-header">
+        <span>Hints on Chemistry Practicals</span>
+        <nav><a href="../index.html">&larr; Back to Home Cover</a></nav>
+    </header>
+
+    <div class="workspace-container">
+        <div class="content-card">
+            <span style="color: var(--teal-brand); font-weight: bold; text-transform: uppercase; font-size: 0.85rem;">Book Page 33</span>
+            <h1>NOTE ON GASES 3</h1>
+            
+            <section>
+                <h2>1. Practical Applications of Hydrogen Gas (H₂)</h2>
+                <ul>
+                    <li><strong>Oxy-hydrogen Flame:</strong> Used for melting metals because hydrogen is highly flammable and gives out a massive amount of heat when it burns.</li>
+                    <li><strong>Filling Balloons:</strong> Used historically because it has an extremely low density, providing great lifting force.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>2. Industrial Manufacture of Hydrogen Gas</h2>
+                <p>Hydrogen is produced commercially on a large scale using three primary pathways:</p>
+                <ol>
+                    <li><strong>By Bosch Process:</strong> Leverages red-hot coke and steam.</li>
+                    <li><strong>From Methane:</strong> Uses hydrocarbons (like methane) instead of coke substrate.</li>
+                    <li><strong>By Electrolytic Methods:</strong> Yields very pure hydrogen gas from <strong>brine</strong> (concentrated $\text{NaCl}$ solution).</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>3. The Mechanics of the Bosch Process</h2>
+                <p>The classic Bosch process operates across two core reaction stages:</p>
+                
+                <h3>Stage I: Water Gas Production (Endothermic)</h3>
+                <p>Steam is passed over red-hot coke at a high temperature of about $1200^\circ\text{C}$ to generate water gas:</p>
+                <div class="equation-box">
+                    C(s) + H₂O(g) &rarr; CO(g) + H₂(g) &nbsp;&nbsp;&nbsp;&nbsp;[Water Gas Mixture]
+                </div>
+
+                <h3>Stage II: Catalytic Reduction of Steam (Exreversible-Exothermic)</h3>
+                <p>Excess steam is mixed with the water gas at $450^\circ\text{C}$ in the presence of an iron oxide catalyst to convert carbon(II) oxide into carbon(IV) oxide, yielding extra hydrogen:</p>
+                <div class="equation-box">
+                    CO(g) + H₂(g) + H₂O(g) &le;&rarr; CO₂(g) + 2H₂(g)
+                </div>
+                <p><strong>Catalyst Used:</strong> Iron(III) oxide ($\text{Fe}_2\text{O}_3$) or Chromium(III) oxide ($\text{Cr}_2\text{O}_3$).</p>
+                <p>Finally, the newly generated $\text{CO}_2$ gas is separated out by dissolving it in water under high pressure, leaving pure hydrogen gas behind.</p>
+            </section>
+
+            <section>
+                <h2>4. Water Gas vs. Producer Gas Dynamics</h2>
+                <ul>
+                    <li><strong>Water Gas:</strong> A gaseous fuel mixture of Carbon(II) oxide and Hydrogen ($\text{CO} + \text{H}_2$).</li>
+                    <li><strong>Producer Gas:</strong> A gaseous fuel mixture of Carbon(II) oxide and Nitrogen ($\text{CO} + \text{N}_2$).</li>
+                </ul>
+
+                <div class="teacher-box">
+                    <strong>🔬 Important Examination Distinction:</strong> Water gas burns much better than producer gas. Why? Because producer gas contains about $67\%$ non-combustible <strong>Nitrogen</strong> gas! Nitrogen does not support combustion and acts as a major diluent, slowing down the rate of combustion and structural corrosion. Hydrogen, however, strongly supports combustion.
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nwankwo E. Joseph. All Rights Reserved. | Hints on Chemistry Practicals</p>
+    </footer>
+
+</body>
+</html>
