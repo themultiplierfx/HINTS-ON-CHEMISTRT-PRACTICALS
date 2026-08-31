@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Cation Identification Matrices — Eze Joseph Nwankwo</title>
+    <style>
+        :root {
+            --dark-blue: #0f172a;
+            --teal-brand: #0d9488;
+            --slate-text: #334155;
+            --bg-canvas: #f8fafc;
+            --border-clean: #e2e8f0;
+            --orange-alert: #ea580c;
+        }
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            color: var(--slate-text);
+            background-color: var(--bg-canvas);
+            line-height: 1.7;
+        }
+        .nav-header {
+            background: var(--dark-blue);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--teal-brand);
+        }
+        .nav-header a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .workspace-container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .content-card {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 12px;
+            border: 1px solid var(--border-clean);
+        }
+        h1 { color: var(--dark-blue); font-size: 2.2rem; margin-top: 0; }
+        h2 { color: var(--dark-blue); font-size: 1.5rem; margin-top: 45px; border-bottom: 2px solid var(--bg-canvas); padding-bottom: 8px; }
+        .teacher-box {
+            background-color: #f0fdfa;
+            border-left: 4px solid var(--teal-brand);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 25px 0;
+        }
+        .teacher-box strong { color: var(--teal-brand); }
+        .data-grid {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 25px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-clean);
+        }
+        .data-grid th { background-color: var(--dark-blue); color: #ffffff; padding: 14px; text-align: left; }
+        .data-grid td { padding: 14px; border-bottom: 1px solid var(--border-clean); }
+        .data-grid tr:last-child td { border-bottom: none; }
+        .data-grid tr:nth-child(even) td { background-color: var(--bg-canvas); }
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            border-top: 1px solid var(--border-clean);
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="nav-header">
+        <span>Hints on Chemistry Practicals</span>
+        <nav><a href="../index.html">&larr; Back to Home Cover</a></nav>
+    </header>
+
+    <div class="workspace-container">
+        <div class="content-card">
+            <span style="color: var(--teal-brand); font-weight: bold; text-transform: uppercase; font-size: 0.85rem;">Chapter 3</span>
+            <h1>Cation Identification Matrices</h1>
+            <p>Positive ions that migrate toward the negative electrode (cathode) during electrolysis are classified as <strong>cations</strong>. Cations are also referred to as metallic ions (including the ammonium ion, NH₄⁺). The core examination syllabus focuses on matching analytical precipitates for eight primary cations: <strong>NH₄⁺, Ca²⁺, Pb²⁺, Cu²⁺, Fe²⁺, Fe³⁺, Al³⁺, and Zn²⁺</strong>.</p>
+            
+            <div class="teacher-box">
+                <strong>💡 Memory Anchor Note:</strong> Think of the cathode and cation as partners moving together. While the <em>cathode</em> is a negative physical electrical terminal, a <em>cation</em> represents a positive chemical ion species.
+            </div>
+
+            <h2>Precipitate Mapping Scheme (NaOH & Aqueous NH₃)</h2>
+            <p>Testing an unknown salt solution by adding dilute Sodium Hydroxide ($NaOH_{(aq)}$) or Aqueous Ammonia ($NH_{3(aq)}$) dropwise, and then in excess, systematically separates and isolates these metal ions based on solubility trends.</p>
+
+            <table class="data-grid">
+                <thead>
+                    <tr>
+                        <th style="width: 20%;">Cation</th>
+                        <th style="width: 40%;">Effect of Dilute NaOH<sub>(aq)</sub></th>
+                        <th style="width: 40%;">Effect of Aqueous NH₃<sub>(aq)</sub></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Ammonium<br><small>(NH₄⁺)</small></b></td>
+                        <td>No precipitate forms. On heating gently, a gas with a sharp, pungent smell is evolved ($NH_3$) which turns red litmus blue.</td>
+                        <td>No observation or reaction occurs.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Calcium<br><small>(Ca²⁺)</small></b></td>
+                        <td>White precipitate forms. It remains <b>insoluble</b> when excess NaOH is added.</td>
+                        <td>No precipitate or reaction forms.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Lead<br><small>(Pb²⁺)</small></b></td>
+                        <td>White precipitate forms. It completely dissolves to a colourless solution in <b>excess NaOH</b>.</td>
+                        <td>White precipitate forms. It remains <b>insoluble</b> when excess NH₃ is added.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Zinc<br><small>(Zn²⁺)</small></b></td>
+                        <td>White precipitate forms. It completely dissolves to a colourless solution in <b>excess NaOH</b>.</td>
+                        <td>White precipitate forms. It completely dissolves to a colourless solution in <b>excess NH₃</b>.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Aluminium<br><small>(Al³⁺)</small></b></td>
+                        <td>White precipitate forms. It completely dissolves to a colourless solution in <b>excess NaOH</b>.</td>
+                        <td>White precipitate forms. It remains <b>insoluble</b> when excess NH₃ is added.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Copper<br><small>(Cu²⁺)</small></b></td>
+                        <td>Pale blue precipitate forms. It remains <b>insoluble</b> in excess NaOH.</td>
+                        <td>Pale blue precipitate forms. It dissolves in <b>excess NH₃</b> to form a deep blue solution.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Iron(II)<br><small>(Fe²⁺)</small></b></td>
+                        <td>Dirty-green gelatinous precipitate forms. It remains <b>insoluble</b> in excess.</td>
+                        <td>Dirty-green gelatinous precipitate forms. It remains <b>insoluble</b> in excess.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Iron(III)<br><small>(Fe³⁺)</small></b></td>
+                        <td>Reddish-brown gelatinous precipitate forms. It remains <b>insoluble</b> in excess.</td>
+                        <td>Reddish-brown gelatinous precipitate forms. It remains <b>insoluble</b> in excess.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="teacher-box" style="background-color: #fff7ed; border-left-color: var(--orange-alert);">
+                <strong>🔬 Critical Diagnostic Trap:</strong> Notice that $Pb^{2+}$, $Zn^{2+}$, and $Al^{3+}$ all give white precipitates that dissolve in excess $NaOH$. To distinguish between them, look closely at the Ammonia ($NH_3$) column: **Only Zinc ($Zn^{2+}$) dissolves in excess Ammonia**, while Lead and Aluminium remain chalky white!
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nwankwo E. Joseph. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
