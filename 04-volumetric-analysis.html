@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Volumetric & Quantitative Analysis — Eze Joseph Nwankwo</title>
+    <style>
+        :root {
+            --dark-blue: #0f172a;
+            --teal-brand: #0d9488;
+            --slate-text: #334155;
+            --bg-canvas: #f8fafc;
+            --border-clean: #e2e8f0;
+            --orange-alert: #ea580c;
+        }
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            color: var(--slate-text);
+            background-color: var(--bg-canvas);
+            line-height: 1.7;
+        }
+        .nav-header {
+            background: var(--dark-blue);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--teal-brand);
+        }
+        .nav-header a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .workspace-container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .content-card {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 12px;
+            border: 1px solid var(--border-clean);
+        }
+        h1 { color: var(--dark-blue); font-size: 2.2rem; margin-top: 0; }
+        h2 { color: var(--dark-blue); font-size: 1.5rem; margin-top: 45px; border-bottom: 2px solid var(--bg-canvas); padding-bottom: 8px; }
+        h3 { color: var(--dark-blue); font-size: 1.2rem; margin-top: 30px; }
+        .teacher-box {
+            background-color: #f0fdfa;
+            border-left: 4px solid var(--teal-brand);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 25px 0;
+        }
+        .teacher-box strong { color: var(--teal-brand); }
+        .math-box {
+            background-color: var(--bg-canvas);
+            border: 1px solid var(--border-clean);
+            font-family: Consolas, monospace;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-weight: bold;
+            color: var(--dark-blue);
+        }
+        .data-grid {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 25px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-clean);
+        }
+        .data-grid th { background-color: var(--dark-blue); color: #ffffff; padding: 14px; text-align: left; }
+        .data-grid td { padding: 14px; border-bottom: 1px solid var(--border-clean); }
+        .data-grid tr:last-child td { border-bottom: none; }
+        .data-grid tr:nth-child(even) td { background-color: var(--bg-canvas); }
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            border-top: 1px solid var(--border-clean);
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="nav-header">
+        <span>Hints on Chemistry Practicals</span>
+        <nav><a href="../index.html">&larr; Back to Home Cover</a></nav>
+    </header>
+
+    <div class="workspace-container">
+        <div class="content-card">
+            <span style="color: var(--teal-brand); font-weight: bold; text-transform: uppercase; font-size: 0.85rem;">Chapter 4</span>
+            <h1>Volumetric & Quantitative Analysis</h1>
+            <p>Volumetric analysis (titration) is a quantitative method used to determine the exact concentrations of unknown solutions by reacting them with standard solutions of known concentrations.</p>
+            
+            <h2>Essential Formulas & Mathematics of Moles</h2>
+            <p>To master volumetric calculations, you must lock these fundamental mathematical equations into memory:</p>
+
+            <h3>1. The Concentration Relationship</h3>
+            <div class="math-box">
+                Concentration (g/dm³) = Concentration (mol/dm³) × Molar Mass (g/mol)
+            </div>
+
+            <h3>2. Molar Concentration (Molarity)</h3>
+            <div class="math-box">
+                Molarity (mol/dm³) = Number of Moles / Volume of Solution (dm³)
+            </div>
+
+            <h3>3. General Titration Formula</h3>
+            <p>When calculating acid-base neutralization or redox stoichiometry properties, use this master ratio equation:</p>
+            <div class="math-box">
+                (C_A × V_A) / (C_B × V_B) = n_A / n_B
+            </div>
+            <p style="font-size: 0.9rem; margin-top: -10px; color: #64748b;">
+                Where: C = Concentration (mol/dm³), V = Volume consumed (titre value), n = Mole ratio from balanced chemical equation.
+            </p>
+
+            <h2>Major Types of Titration Systems</h2>
+            <table class="data-grid">
+                <thead>
+                    <tr>
+                        <th style="width: 30%;">Titration Class</th>
+                        <th style="width: 40%;">Reaction Character</th>
+                        <th style="width: 30%;">Common Indicator Used</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Acid-Base Titration</b></td>
+                        <td>A classical neutralization reaction between hydrogen ions ($H^+$) and hydroxide ions ($OH^-$) to form water and a salt.</td>
+                        <td>Methyl Orange<br>Phenolphthalein</td>
+                    </tr>
+                    <tr>
+                        <td><b>Redox Titration</b></td>
+                        <td>Involves simultaneous electron transfer (Oxidation and Reduction) processes between chemical species.</td>
+                        <td>Self-indicating ($KMnO_4$) / Starch (for Iodine)</td>
+                    </tr>
+                    <tr>
+                        <td><b>Precipitation (Silver Nitrate)</b></td>
+                        <td>A reaction where ions in solution combine to form an insoluble solid lattice product.</td>
+                        <td>Potassium Chromate ($K_2CrO_4$)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="teacher-box">
+                <strong>🔬 20-Year Exam Presentation Note:</strong> Burette readings (both initial and final values) must **always** be recorded to exactly two decimal places (e.g., 24.10cm³, not 24.1cm³). Missing this precise detail in your tabulation layouts will cost you vital structural formatting marks during evaluation panels!
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nwankwo E. Joseph. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
