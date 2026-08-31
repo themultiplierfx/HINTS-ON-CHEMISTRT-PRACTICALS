@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMB Questions on Gases 3 — Hints on Chemistry Practicals</title>
+    <style>
+        :root {
+            --dark-blue: #0f172a;
+            --teal-brand: #0d9488;
+            --slate-text: #334155;
+            --bg-canvas: #f8fafc;
+            --border-clean: #e2e8f0;
+        }
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            color: var(--slate-text);
+            background-color: var(--bg-canvas);
+            line-height: 1.7;
+        }
+        .nav-header {
+            background: var(--dark-blue);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--teal-brand);
+        }
+        .nav-header a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .workspace-container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .content-card {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 12px;
+            border: 1px solid var(--border-clean);
+        }
+        h1 { color: var(--dark-blue); font-size: 2rem; margin-top: 0; }
+        .quiz-card {
+            background: var(--bg-canvas);
+            border: 1px solid var(--border-clean);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        .option-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 15px 0;
+        }
+        .option-btn {
+            background: #ffffff;
+            border: 1px solid var(--border-clean);
+            padding: 12px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+        .option-btn:hover {
+            border-color: var(--teal-brand);
+            background: #f0fdfa;
+        }
+        .show-ans-btn {
+            background: var(--dark-blue);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .answer-reveal {
+            display: none;
+            margin-top: 15px;
+            padding: 12px;
+            background: #ecfdf5;
+            border-left: 4px solid #10b981;
+            color: #065f46;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            .option-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="nav-header">
+        <span>Hints on Chemistry Practicals</span>
+        <nav><a href="../index.html">&larr; Back to Home Cover</a></nav>
+    </header>
+
+    <div class="workspace-container">
+        <div class="content-card">
+            <span style="color: var(--teal-brand); font-weight: bold; text-transform: uppercase; font-size: 0.85rem;">Book Page 32</span>
+            <h1>JAMB Questions on Gases 3</h1>
+            <p style="color: #64748b; font-style: italic; margin-bottom: 30px;">(Select an option or click the validation button below each card to reveal keys instantly.)</p>
+
+            <!-- Q1 -->
+            <div class="quiz-card">
+                <p><strong>1.</strong> In the Haber process for the manufacture of ammonia, finely divided iron is used as:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. an ionizing agent</button>
+                    <button class="option-btn" onclick="reveal(this)">B. a reducing agent</button>
+                    <button class="option-btn" onclick="reveal(this)">C. a catalyst</button>
+                    <button class="option-btn" onclick="reveal(this)">D. a dehydrating agent</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: C — Finely divided iron serves as the catalyst to speed up the rate of reaction [32].</div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="quiz-card">
+                <p><strong>2.</strong> Nitrogen can best be obtained from a mixture of oxygen and nitrogen by passing the mixture over:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. potassium hydroxide</button>
+                    <button class="option-btn" onclick="reveal(this)">B. heated gold</button>
+                    <button class="option-btn" onclick="reveal(this)">C. heated magnesium</button>
+                    <button class="option-btn" onclick="reveal(this)">D. heated phosphorus</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: D — Heated phosphorus reacts with and removes the oxygen, leaving nitrogen gas behind [32].</div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="quiz-card">
+                <p><strong>3.</strong> Which of the following is used in the manufacture of bleaching powder?</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. Sulphur dioxide</button>
+                    <button class="option-btn" onclick="reveal(this)">B. Chlorine</button>
+                    <button class="option-btn" onclick="reveal(this)">C. Hydrogen sulphide</button>
+                    <button class="option-btn" onclick="reveal(this)">D. Nitrogen dioxide</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: B — Chlorine gas passed over slaked lime produces bleaching powder [32].</div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="quiz-card">
+                <p><strong>4.</strong> When steam is passed through red hot carbon, which of the following are produced?</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. Hydrogen, oxygen and carbon(IV)oxide</button>
+                    <button class="option-btn" onclick="reveal(this)">B. Hydrogen and carbon (IV) oxide</button>
+                    <button class="option-btn" onclick="reveal(this)">C. Hydrogen and carbon (II) oxide</button>
+                    <button class="option-btn" onclick="reveal(this)">D. Hydrogen and trioxocarbonate(IV) acid</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: C — Passing steam over red hot carbon produces water gas, which is a mixture of Hydrogen ($H_2$) and Carbon(II) oxide ($CO$) [32].</div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="quiz-card">
+                <p><strong>5.</strong> When chlorine is passed into water and subsequently exposed to sunlight, the gas evolved is:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. HCl</button>
+                    <button class="option-btn" onclick="reveal(this)">B. HOCl</button>
+                    <button class="option-btn" onclick="reveal(this)">C. O₂</button>
+                    <button class="option-btn" onclick="reveal(this)">D. Cl₂</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: C — Sunlight decomposes oxochlorate(I) acid ($HOCl$) to liberate oxygen gas ($O_2$) [32].</div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="quiz-card">
+                <p><strong>6.</strong> Magnesium ribbon was allowed to burn inside a given gas P leaving a white solid residue Q. Addition of water to Q liberated a gas which produced dense white fumes with a drop of hydrochloric acid. The gas P was:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. Nitrogen</button>
+                    <button class="option-btn" onclick="reveal(this)">B. chlorine</button>
+                    <button class="option-btn" onclick="reveal(this)">C. oxygen</button>
+                    <button class="option-btn" onclick="reveal(this)">D. sulphur (IV) oxide</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: A — Magnesium burns in Nitrogen to form Magnesium nitride ($Mg_3N_2$). Adding water releases Ammonia gas ($NH_3$), which forms white fumes with $HCl$ [32].</div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="quiz-card">
+                <p><strong>7.</strong> When calcium hydroxide is heated with ammonium tetraoxosulphate (VI), the gas given off may be collected by:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. bubbling it through concentrated H₂SO₄</button>
+                    <button class="option-btn" onclick="reveal(this)">B. bubbling it through water and then passing it through calcium oxide</button>
+                    <button class="option-btn" onclick="reveal(this)">C. passing it directly through calcium oxide</button>
+                    <button class="option-btn" onclick="reveal(this)">D. passing it directly through calcium chloride</button>
