@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMB Questions on Gases 4 — Hints on Chemistry Practicals</title>
+    <style>
+        :root {
+            --dark-blue: #0f172a;
+            --teal-brand: #0d9488;
+            --slate-text: #334155;
+            --bg-canvas: #f8fafc;
+            --border-clean: #e2e8f0;
+        }
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            color: var(--slate-text);
+            background-color: var(--bg-canvas);
+            line-height: 1.7;
+        }
+        .nav-header {
+            background: var(--dark-blue);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--teal-brand);
+        }
+        .nav-header a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .workspace-container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .content-card {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 12px;
+            border: 1px solid var(--border-clean);
+        }
+        h1 { color: var(--dark-blue); font-size: 2rem; margin-top: 0; }
+        .quiz-card {
+            background: var(--bg-canvas);
+            border: 1px solid var(--border-clean);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        .option-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 15px 0;
+        }
+        .option-btn {
+            background: #ffffff;
+            border: 1px solid var(--border-clean);
+            padding: 12px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+        .option-btn:hover {
+            border-color: var(--teal-brand);
+            background: #f0fdfa;
+        }
+        .show-ans-btn {
+            background: var(--dark-blue);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .answer-reveal {
+            display: none;
+            margin-top: 15px;
+            padding: 12px;
+            background: #ecfdf5;
+            border-left: 4px solid #10b981;
+            color: #065f46;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            .option-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="nav-header">
+        <span>Hints on Chemistry Practicals</span>
+        <nav><a href="../index.html">&larr; Back to Home Cover</a></nav>
+    </header>
+
+    <div class="workspace-container">
+        <div class="content-card">
+            <span style="color: var(--teal-brand); font-weight: bold; text-transform: uppercase; font-size: 0.85rem;">Book Page 36</span>
+            <h1>JAMB Questions on Gases 4</h1>
+            <p style="color: #64748b; font-style: italic; margin-bottom: 30px;">(Select an option or click the validation button below each card to reveal keys instantly.)</p>
+
+            <!-- Q1 -->
+            <div class="quiz-card">
+                <p><strong>1.</strong> In the Haber process for the manufacture of ammonia, the catalyst commonly used is finely divided:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. vanadium</button>
+                    <button class="option-btn" onclick="reveal(this)">B. platinum</button>
+                    <button class="option-btn" onclick="reveal(this)">C. iron</button>
+                    <button class="option-btn" onclick="reveal(this)">D. copper</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: C — Finely divided iron is the standard catalyst used in the Haber process.</div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="quiz-card">
+                <p><strong>2.</strong> A quantity of air was passed through a weighed amount of alkaline pyrogallol. An increase in the weight of the pyrogallol would result from the absorption of:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. nitrogen</button>
+                    <button class="option-btn" onclick="reveal(this)">B. neon</button>
+                    <button class="option-btn" onclick="reveal(this)">C. argon</button>
+                    <button class="option-btn" onclick="reveal(this)">D. oxygen</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: D — Alkaline pyrogallol is a specific absorber for oxygen gas.</div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="quiz-card">
+                <p><strong>3.</strong> Which of the following, in clear solution, forms a white precipitate when carbon(IV) oxide is bubbled into it for a short time?</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. KOH</button>
+                    <button class="option-btn" onclick="reveal(this)">B. NaOH</button>
+                    <button class="option-btn" onclick="reveal(this)">C. Ca(OH)₂</button>
+                    <button class="option-btn" onclick="reveal(this)">D. Al(OH)₃</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: C — Ca(OH)₂ (lime water) turns milky due to insoluble calcium carbonate formation.</div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="quiz-card">
+                <p><strong>4.</strong> Which of the following gases dissolves in water vapour to produce acid rain during rainfall?</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. Oxygen</button>
+                    <button class="option-btn" onclick="reveal(this)">B. Carbon (II) oxide</button>
+                    <button class="option-btn" onclick="reveal(this)">C. Nitrogen</button>
+                    <button class="option-btn" onclick="reveal(this)">D. Sulphur (IV) oxide</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: D — Sulphur(IV) oxide dissolves to form acid rain components.</div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="quiz-card">
+                <p><strong>5.</strong> The gas formed when ammonium trioxonitrate (V) is heated with sodium hydroxide is:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. hydrogen</button>
+                    <button class="option-btn" onclick="reveal(this)">B. nitrogen(IV) oxide</button>
+                    <button class="option-btn" onclick="reveal(this)">C. oxygen</button>
+                    <button class="option-btn" onclick="reveal(this)">D. ammonia</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: D — Heating any ammonium salt with an alkali like NaOH liberates ammonia gas.</div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="quiz-card">
+                <p><strong>6.</strong> Argon is used in gas-filled electric lamps because it helps to:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. prevent the reduction of the lamp filament</button>
+                    <button class="option-btn" onclick="reveal(this)">B. prevent oxidation of lamp filament</button>
+                    <button class="option-btn" onclick="reveal(this)">C. make lamp filaments glow brightly</button>
+                    <button class="option-btn" onclick="reveal(this)">D. keep the atmosphere in the lamp inert</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: B — Argon provides an unreactive environment that shields the filament from burning up or oxidizing.</div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="quiz-card">
+                <p><strong>7.</strong> Water can be identified by the use of:</p>
+                <div class="option-grid">
+                    <button class="option-btn" onclick="reveal(this)">A. anhydrous copper(II) tetraoxosulphate(VI)</button>
+                    <button class="option-btn" onclick="reveal(this)">B. anhydrous sodium trioxocarbonate(IV)</button>
+                    <button class="option-btn" onclick="reveal(this)">C. potassium heptaoxochromate(VII)</button>
+                    <button class="option-btn" onclick="reveal(this)">D. copper (II) trioxocarbonate(IV)</button>
+                </div>
+                <button class="show-ans-btn" onclick="toggleBlock(this)">Show Key</button>
+                <div class="answer-reveal">Correct Answer: A — Water characteristically changes anhydrous copper(II) tetraoxosulphate(VI) from white to blue.</div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="quiz-card">
